@@ -5,11 +5,11 @@ GLfloat angle, fAspect;
 // Função callback chamada para fazer o desenho
 void Desenha(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Limpa buffers de cor e profundidade
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(0.0f, 1.0f, 0.0f); // altere a cor do teapot
 
     // Aplica uma rotação de 30 graus ao redor do eixo X
     glPushMatrix();  // Salva a matriz corrente
-    glRotatef(10.0f, 0.0f, 0.0f, 1.0f); // Rotação de 30 graus no eixo X
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f); // Altere aqui para especificar os graus da rotação e em qual eixo será feita
 
     // Desenha o teapot
     glutWireTeapot(50.0f);
